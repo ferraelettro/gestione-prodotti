@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestione Prodotti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Scansione Barcode</h1>
+  <div class="scanner">
+    <input type="text" id="barcodeInput" placeholder="Scansiona il barcode" autofocus>
+    <button onclick="searchProduct()">Cerca</button>
+  </div>
+  <div id="productDetails" class="hidden">
+    <h2>Dettagli Prodotto</h2>
+    <p><strong>Nome:</strong> <span id="productName"></span></p>
+    <p><strong>Prezzo Acquisto:</strong> €<span id="purchasePrice"></span></p>
+    <p><strong>Prezzo Vendita:</strong> €<span id="salePrice"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
